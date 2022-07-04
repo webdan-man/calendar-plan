@@ -1,0 +1,93 @@
+.container {
+    position: absolute;
+    background: #d2d2d2;
+    z-index: 2;
+    display: flex;
+    transition: all 0.35s;
+    &-content {
+
+    }
+    &-center {
+        position: relative;
+        background: white;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+    }
+    &-top {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 30px;
+        box-shadow: 0 3px 5px 0 rgb(0 0 0 / 25%);
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 200px;
+        &-expand {
+            height: 150px;
+        }
+        .container-action {
+            order: 2;
+        }
+    }
+    &-left {
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 100vh;
+        box-shadow: 3px 0 5px 0 rgb(0 0 0 / 25%);
+        justify-content: flex-end;
+        &-expand {
+            width: 200px;
+        }
+    }
+    &-right {
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 100vh;
+        box-shadow: -3px 0 5px 0 rgb(0 0 0 / 25%);
+        justify-content: flex-start;
+        &-expand {
+            width: 200px;
+        }
+    }
+    &-bottom {
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 30px;
+        box-shadow: 0 -3px 5px 0 rgb(0 0 0 / 25%);
+        flex-direction: column;
+        justify-content: space-between;
+        &-expand {
+            height: 150px;
+        }
+    }
+    &-button {
+        &-top {
+            left: 50%;
+            bottom: -12px;
+            margin-left: -12px;
+            transform: rotate(90deg);
+    }
+        &-left {
+            top: 50%;
+            right: -12px;
+            margin-top: -12px;
+            transform: rotate(0deg);
+        }
+        &-right {
+            top: 50%;
+            left: -12px;
+            margin-top: -12px;
+            transform: rotate(180deg);
+        }
+        &-bottom {
+            left: 50%;
+            top: -12px;
+            margin-left: -12px;
+            transform: rotate(270deg);
+        }
+    }
+}

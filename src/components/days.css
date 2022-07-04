@@ -1,0 +1,10 @@
+.dayItem {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7fa;
+  border-radius: 10px;
+  cursor: pointer;
+}
